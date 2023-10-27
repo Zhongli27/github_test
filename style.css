@@ -1,0 +1,270 @@
+html{display:flex; position:relative;}
+
+html::before{background:url("Screenshot_2023-10-17-23-22-57-763_com.miHoYo.GenshinImpact.jpg")no-repeat;content:"";background-size:100% 100%; opacity:0.30;position:absolute;top:0px;right:0px;left:0px;bottom:0px;}
+
+
+
+body{margin:0; box-sizing:border-box;}
+
+.header-container > h1{text-align:center; background:url("Genshin-Impact-Neuvillette-build-guide-Best-artifacts-weapons-teams.jpg");background-size:cover; position:relative; top:-20px; padding:18px; opacity:0.8;background-position:top-left;animation:moveheader 5s infinite; border:solid red 1px; border-radius:20px;font-family:Sans-serif;}
+
+@keyframes moveheader{
+    50% {background-position:center;}
+    50% {box-shadow:10px 20px 30px #3B5998;}
+    50% {font-family:cursive;}
+    50% {text-transform:capitalise;}
+    50% {border:double 4px darkred}
+ }
+ 
+
+
+  .introduction_parent{background:rgba(255, 255, 255, 0.2); padding:20px; margin:10px; border:outset 4px indianred;border-radius:25px;backdrop-filter:blur(15px);border:solid red 1px rgba(255, 255, 255, 0.2); animation:moveIntroduction 5s infinite;text-align:center;}
+  
+ 
+
+.introduction_2, .introduction_3,.introduction_4, .introduction_5, .introduction_6, .introduction_7{background:rgba(255, 255, 255, 0.2); padding:20px; margin:10px; border:outset 4px indianred; text-align:center; border-radius:25px;backdrop-filter:blur(15px);border:solid red 1px rgba(255, 255, 255, 0.2); height:1000px;animation:moveIntroduction 5s infinite;}
+
+span {
+  position: absolute;
+  border-radius: 100vmax;
+}
+
+.top {
+  top: 5px;
+  left: 5px;
+  width: 0;
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    transparent 50%,
+    rgba(255, 49, 49, 0.5),
+    rgb(255, 49, 49)
+  );
+}
+
+.bottom {
+  right: 5px;
+  bottom: 5px;
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    rgb(57, 255, 20),
+    rgba(57, 255, 20, 0.5),
+    transparent 50%
+  );
+}
+
+.right {
+  top: 5px;
+  right: 5px;
+  width: 5px;
+  height: 5px;
+  background: linear-gradient(
+    180deg,
+    transparent 30%,
+    rgba(0, 255, 255, 0.5),
+    rgb(0, 255, 255)
+  );
+}
+
+.left {
+  left: 5px;
+  bottom: 5px;
+  width: 5px;
+  height: 5px;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 113),
+    rgba(255, 255, 113, 0.5),
+    transparent 30%
+  );
+}
+
+.top {
+  animation: animateTop 5s ease-in-out infinite;
+}
+
+.bottom {
+  animation: animateBottom 5s ease-in-out infinite;
+}
+
+.right {
+  animation: animateRight 5s ease-in-out infinite;
+}
+
+.left {
+  animation: animateLeft 5s ease-in-out infinite;
+}
+
+@keyframes animateTop {
+  25% {
+    width: 95%;
+    opacity: 1;
+  }
+
+  30%,
+  100% {
+   opacity: 0;
+  }
+}
+
+@keyframes animateBottom {
+  0%,
+  50% {
+    opacity: 0;
+    width: 0;
+  }
+
+  75% {
+    opacity: 1;
+    width: 95%;
+  }
+
+  76%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animateRight {
+  0%,
+  25% {
+    opacity: 0;
+    height: 0;
+  }
+
+  50% {
+    opacity: 1;
+    height: 95%;
+  }
+
+  55%,
+  100% {
+    height: 95%;
+    opacity: 0;
+  }
+}
+
+@keyframes animateLeft {
+  0%,
+  75% {
+    opacity: 1;
+    bottom: 0;
+    height: 0;
+  }
+
+  100% {
+    opacity: 1;
+    height: 96%;
+  }
+}
+
+
+
+@keyframes moveIntroduction{
+     50% {box-shadow:10px 20px 30px #3B5998;}
+    50% {border:double 4px grey;}
+    50% {backdrop-filter:blur(20px)}
+}
+ 
+
+ 
+ #page-footer{position:relative;padding:0;text-align:center; background:#9CB2CE; line-height:18px;top:100px;opacity:0.6;animation:moveFooter 20s infinite ease-in-out;}
+ 
+ @keyframes moveFooter {
+  from {
+    transform: rotate(0deg);
+    background-color: #9CB2CE; /* Set the background color in the 'from' keyframe */
+  }
+  to {
+    transform: rotateY(360deg); /* Corrected the 'transform' syntax */
+    background-color: green;
+    border-radius:25px;
+  }
+}
+
+
+img{border-radius:10px;border:solid black 3px; border-top-color: #3498db;
+border-left-color: #3498db;
+border-right-color: #3498db;
+border-bottom-color: #3498db;
+border-radius: 20px;
+animation: borderChange 5s linear infinite;} 
+
+@keyframes borderChange {
+    0% {
+        border-top-color: red;
+        border-left-color: #3498db;
+        border-right-color: #3498db;
+        border-bottom-color: #3498db;
+    }
+    25% {
+        border-top-color: transparent;
+        border-left-color: yellow;
+        border-right-color: green;
+        border-bottom-color: grey;
+    }
+    50% {
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-right-color: #3498db;
+        border-bottom-color: #3498db;
+    }
+    75% {
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: grey;
+    }
+    100% {
+        border-top-color: red;
+        border-left-color: #3498db;
+        border-right-color: #3498db;
+        border-bottom-color: transparent;
+    }
+}
+ 
+ 
+ #page-footer > h4{text-transform:uppercase;top:24px; position:relative;}
+ #page-footer > .students{line-height:20px;position:relative;top:8px;}
+ 
+ 
+.introduction_parent > p:nth-child(2){text-align:justify; line-height:21px;}
+
+.introduction_2 > ul{text-align:justify;line-height:20px;word-spacing:-1px;}
+
+.introduction_3 > ul{text-align:justify; word-spacing:-1px;}
+
+.introduction_4 > ul{text-align:justify;word-spacing:-1px;}
+
+.introduction_5 > ul{text-align:justify;word-spacing:-1px;}
+
+.introduction_6 > ul{text-align:justify;word-spacing:-1px;}
+
+.introduction_7 > p{text-align:justify;word-spacing:-1px;}
+
+@media (min-width:320px){
+  .introduction_2{height:97em;}
+  .introduction_3{height:40em;}
+  .introduction_5{height:49em;}
+  .introduction_6{height:46em;}
+  .introduction_7{height:17em;}
+  .introduction_parent{height:29em;}
+}
+
+@media (min-width:640px){
+  .introduction_2{height:120em;}
+  .introduction_3{height:43em;}
+  .introduction_5{height:53em;}
+  .introduction_6{height:34em;}
+  .introduction_7{height:9em;}
+  .introduction_parent{height:18em;}
+  .introduction_3 > hr{width:80%;}
+  .introduction_4 > hr{width:50%;}
+  .introduction_5 > hr{width:60%;}
+  .introduction_6 > hr{width:37%;}
+  .introduction_7{height:11em;}
+}
+
+ 
+ 
